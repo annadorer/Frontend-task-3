@@ -41,7 +41,7 @@ img {
   height: 80px;
   left: 0px;
   top: 0px;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 header.scroll {
@@ -55,7 +55,7 @@ header.scroll {
   left: 28px;
   top: 20px;
   background-image: url("../public/img/logo 1.svg");
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .header__menu {
@@ -68,12 +68,12 @@ header.scroll {
   transition-duration: .25s;
   align-items: center;
   justify-content: center;
-  z-index: 999;
 }
 
 .header__menu.active {
   left: 0px;
   background: rgba(17, 17, 17, 0.8);
+  z-index: 9999;
 }
 
 .menu__items {
@@ -102,7 +102,7 @@ header.scroll {
   cursor: pointer;
   margin: 30px 38px 15px 18px;
   background: transparent;
-  z-index: 9999;
+  z-index: 99999;
   border: transparent;
 }
 
@@ -198,7 +198,7 @@ header.scroll {
   margin-bottom: 40px;
   bottom: -10px;
   animation: arrow-movement 2s 1s linear infinite;
-  z-index: 99;
+  z-index: 999;
 }
 
 .sightseens{
@@ -565,6 +565,7 @@ header.scroll {
     display: block;
     position: absolute;
     margin-top: 88px;
+    z-index: 0;
   }
 
   .header__menu li{
@@ -579,6 +580,10 @@ header.scroll {
 
   .menu__item{
     margin-right: 20px;
+  }
+
+  .welcome__arrow {
+    z-index: 999999;
   }
 
  .header__scroll{
